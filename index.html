@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LyukovAI - Beta</title>
+  <link rel="stylesheet" href="style.css" />
+
+<script>
+// Initialize theme from localStorage or system preference
+(function() {
+  const saved = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const dark = saved ? saved === 'dark' : prefersDark;
+  document.body.classList.toggle('dark-mode', dark);
+  document.body.classList.toggle('light-mode', !dark);
+})();
+</script>
+
+</head>
+<body class="dark-mode">
+  <div class="container">
+    <header>
+      <h1>LyukovAI</h1>
+      <button id="toggle-mode">Mode Gelap/Terang</button>
+    </header>
+    <main id="chat-container">
+      <div id="chat-box"></div>
+      <div id="input-area">
+        <input type="text" id="user-input" placeholder="Tulis pertanyaan kamu..." />
+        <button id="send-btn">Kirim</button>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
