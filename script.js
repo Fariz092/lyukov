@@ -1,5 +1,4 @@
-
-const API_KEY = "ISI_API_KEY_COHERE_MU"; // Ganti dengan API Key Cohere
+const API_KEY = "HAE2u24oT5w0v7mr6d8tbHmNETZyoMvbONgHav7S"; // Ganti dengan API Key Cohere
 const sendBtn = document.getElementById("send-btn");
 const input = document.getElementById("user-input");
 const chatBox = document.getElementById("chat-box");
